@@ -26,11 +26,12 @@ public class rightControl : MonoBehaviour
 
     void Update()
     {
+    /*
         if (togglePotential.GetLastStateDown(handType))
         {
             potential.toggleMarchingCube();
         }
-
+*/
         if (press.GetState(handType))
         {
             if(touchPosition.GetAxis(handType).y > 0)
@@ -47,11 +48,11 @@ public class rightControl : MonoBehaviour
         {
             if (touch.GetStateDown(handType))
             {
-                voltageMeter.SetActive(true);
+                //voltageMeter.SetActive(true);
             }
             if (touch.GetStateUp(handType))
             {
-                voltageMeter.SetActive(false);
+                //voltageMeter.SetActive(false);
             }
         }
 
